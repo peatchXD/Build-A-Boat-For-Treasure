@@ -1,18 +1,22 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/GUI"))() local Window = Library.CreateLib("NONAME HUB", "BloodTheme")
 
-local Tab = Window:NewTab("main") local Section = Tab:NewSection("Fake Gold")
+local Tab = Window:NewTab("Fake Gold") local Section = Tab:NewSection("Fake Gold")
 
-Section:NewButton("กดตรงนี้", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20Gold"))()
+Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20Gold"))()
 end)
 
-local Tab = Window:NewTab("main") local Section = Tab:NewSection("Fake Blocks")
+local Tab = Window:NewTab("Fake Blocks") 
 
-Section:NewButton("กดตรงนี้", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20All.lua"))()
+local Section = Tab:NewSection("Fake Blocks")
+
+Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20All.lua"))()
 end)
+
+local Tab = Window:NewTab("Main") 
 
 local Section = Tab:NewSection("Rejoin")
 
-Section:NewButton("เข้าออกเข้าใหม่", "ออกเข้าใหม่", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/blox-fruit-fake-level-/main/Rejoin%20Game.lua"))() end)
+Section:NewButton("Click", "ออกเข้าใหม่", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/blox-fruit-fake-level-/main/Rejoin%20Game.lua"))() end)
 
 local Tab = Window:NewTab("credit") local Section = Tab:NewSection("By: peatchXD") local Section = Tab:NewSection(" ")
 
