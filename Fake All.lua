@@ -28,8 +28,4 @@ game.Players.LocalPlayer.Data.Torch.Value = 9999999
 game.Players.LocalPlayer.Data.YellowChest.Value = 9999999
 game.Players.LocalPlayer.Data.LifePreserver.Value = 9999999
 game.Players.LocalPlayer.Data['Steel I-Beam'].Value = 9999999
-game.Players.LocalPlayer.Data.Gold.Value = 9999999
-game.Players.LocalPlayer.Data.TitaniumBlock.Value = 9999999
-game.Players.LocalPlayer.Data.Cake.Value = 9999999
-game.Players.LocalPlayer.Data.WinterThruster.Value = 9999999
-game.Players.LocalPlayer.Data.DragonHarpoon.Value = 9999999
+
