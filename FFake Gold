@@ -2,12 +2,12 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/peatc
 
 local Tab = Window:NewTab("main") local Section = Tab:NewSection("Fake Gold")
 
-Section:NewButton("กดตรงนี้", "NONAME HUB", function() loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20Gold"))()"))() 
+Section:NewButton("กดตรงนี้", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20Gold"))()
 end)
 
 local Tab = Window:NewTab("main") local Section = Tab:NewSection("Fake Blocks")
 
-Section:NewButton("กดตรงนี้", "NONAME HUB", function() loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20All.lua"))()"))() 
+Section:NewButton("กดตรงนี้", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20All.lua"))()
 end)
 
 local Section = Tab:NewSection("Rejoin")
