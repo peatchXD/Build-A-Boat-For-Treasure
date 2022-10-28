@@ -29,3 +29,5 @@ game.Players.LocalPlayer.Data.YellowChest.Value = 9999999
 game.Players.LocalPlayer.Data.LifePreserver.Value = 9999999
 game.Players.LocalPlayer.Data['Steel I-Beam'].Value = 9999999
 game.Players.LocalPlayer.Data.Gold.Value = 9999999
+game.Players.LocalPlayer.Data.TitaniumBlock.Value = 9999999
+game.Players.LocalPlayer.Data..Value = 9999999
