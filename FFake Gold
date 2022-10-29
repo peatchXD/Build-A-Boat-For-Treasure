@@ -1,5 +1,29 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/GUI"))() local Window = Library.CreateLib("NONAME HUB", "BloodTheme")
 
+local Tab = window:NewTab("Auto Farm Gold")
+
+local Section = Tab:NewSection("Script Auto Farm Gold")
+
+Section:NewButton("Click", "Auto Farm", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/XRoLLu/Rolly_Hub/main/open-source-trash-loader.exe.yeah"))()
+
+local Players = game:GetService("Players")
+local connections = getconnections or get_signal_cons
+if connections then
+    for i,v in pairs(connections(Players.LocalPlayer.Idled)) do
+        if v["Disable"] then
+            v["Disable"](v)
+        elseif v["Disconnect"] then
+            v["Disconnect"](v)
+        end
+    end
+else
+    Players.LocalPlayer.Idled:Connect(function()
+        local VirtualUser = game:GetService("VirtualUser")
+        VirtualUser:CaptureController()
+        VirtualUser:ClickButton2(Vector2.new())
+    end)
+end
+
 local Tab = Window:NewTab("Fake Gold") local Section = Tab:NewSection("Fake Gold")
 
 Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20Gold"))()
