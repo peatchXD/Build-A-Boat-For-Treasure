@@ -4,7 +4,7 @@ local Tab = window:NewTab("Auto Farm Gold")
 
 local Section = Tab:NewSection("Script Auto Farm Gold")
 
-Section:NewButton("Click", "Auto Farm", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Auto%20Farm.lua"))()
+Section:NewButton("Click", "Auto Farm", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Auto%20Farm.lua"))() end)
 
 
 local Tab = Window:NewTab("Fake Gold") local Section = Tab:NewSection("Fake Gold")
