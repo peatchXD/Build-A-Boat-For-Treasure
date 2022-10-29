@@ -1,6 +1,8 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/GUI"))() local Window = Library.CreateLib("NONAME HUB", "BloodTheme")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/GUI"))() 
+local Window = Library.CreateLib("NONAME HUB", "BloodTheme")
 
-local Tab = window:NewTab("Auto Farm Gold") local Section = Tab:NewSection("Script Auto Farm Gold")
+local Tab = window:NewTab("Auto Farm Gold") 
+local Section = Tab:NewSection("Script Auto Farm Gold")
 
 Section:NewButton("Click", "Auto Farm", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Auto%20Farm.lua"))() end)
 
