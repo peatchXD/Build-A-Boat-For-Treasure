@@ -1,8 +1,11 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/GUI"))() 
-local Window = Library.CreateLib("NONAME HUB", "BloodTheme")
+local Window = Library.CreateLib("NONAME HUB", "DarkTheme")
+
+local Tab = Window:NewTab("Auto Farm") local Section = Tab:NewSection("Script Auto Farm")
+Section:NewButton("Click", "Auto Farm Script", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Auto%20Farm.lua"))() end)
+
 
 local Tab = Window:NewTab("Fake Gold") 
-
 local Section = Tab:NewSection("Fake Gold")
 
 Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20Gold"))()
@@ -26,6 +29,6 @@ local Section = Tab:NewSection("Infinite Yield")
 Section:NewButton("Click", "เปิด Infinite Yield", function() loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))() end)
 
 
-local Tab = Window:NewTab("credit") local Section = Tab:NewSection("By: peatchXD") local Section = Tab:NewSection(" ")
+local Tab = Window:NewTab("credit") local Section = Tab:NewSection("By: peatchXD")
 
 Section:NewKeybind("กดเพื่อเปลื่ยนปุ่ม", "KeybindInfo", Enum.KeyCode.F, function() Library:ToggleUI() end)
