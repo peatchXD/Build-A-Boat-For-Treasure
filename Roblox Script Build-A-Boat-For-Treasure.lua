@@ -4,6 +4,14 @@ local Window = Library.CreateLib("NONAME HUB", "DarkTheme")
 local Tab = Window:NewTab("💳 Auto Farm") local Section = Tab:NewSection("Script Auto Farm")
 Section:NewButton("Click", "Auto Farm Script", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Auto%20Farm.lua"))() end)
 
+local Tab = Window:NewTab("🔨 Auto Builder") 
+local Section = Tab:NewSection("Script Auto Builder")
+
+Section:NewButton("Click", "Script Auto Builder", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Auto%20Builder.lua"))() end)
+
+local Section = Tab:NewSection("Script Auto Builder Image")
+
+Section:NewButton("Click", "Script Auto Builder Image", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Auto%20Builder%20Image.lua"))() end)
 
 local Tab = Window:NewTab("👑 Fake") 
 local Section = Tab:NewSection("Fake Gold")
