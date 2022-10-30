@@ -26,7 +26,11 @@ Section:NewButton("Click", "ออกเข้าใหม่", function() loads
 
 local Section = Tab:NewSection("Infinite Yield")
 
-Section:NewButton("Click", "เปิด Infinite Yield", function() loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))() end)
+Section:NewButton("Click", "เปิด Infinite Yield", function() loadstring(game:HttpGet(("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))() end)
+
+local Section = Tab:NewSection("Anit AFK")
+  
+Section:NewButton("Click", "เปิด Anit AFK", function() loadstring(game:HttpGet(("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/AFK.lua"))() end)
 
 
 local Tab = Window:NewTab("credit") local Section = Tab:NewSection("By: peatchXD")
