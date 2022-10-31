@@ -57,9 +57,30 @@ Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("htt
 end)
 
 local Tab = Window:NewTab("👨‍💻 Player")
-folder:AddSlider({text = '⚡ WalksSpeed', min = 16, max = 100, incrementalMode = true, callback = function(value) 
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
-end});
+
+local Section = Tab:NewSection("🎛 All Deffault")
+
+Section:NewButton("Deffault", "WalksSpeed & JumpPower Deffault", function() 
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50 end)
+
+local Section = Tab:NewSection("⚡ WalksSpeed")
+
+Section:NewButton("Speed 45", "WalksSpeed", function() game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 45 end)
+Section:NewButton("Speed 90", "WalksSpeed", function() game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 90 end) 
+
+local Section = Tab:NewSection("⚡ WalksSpeed Deffault")
+
+Section:NewButton("Deffault", "WalksSpeed Deffault", function() game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16 end)
+
+local Section = Tab:NewSection("🦵 JumpPower")
+
+Section:NewButton("JumpPower 100", "JumpPower", function() game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100 end)
+Section:NewButton("JumpPower 200", "JumpPower", function() game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200 end)
+
+local Section = Tab:NewSection("🦵 JumpPower Deffault")
+
+Section:NewButton("Deffault", "JumpPower Deffault", function() game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50 end)
 
 local Tab = Window:NewTab("🎮 Main") 
 
