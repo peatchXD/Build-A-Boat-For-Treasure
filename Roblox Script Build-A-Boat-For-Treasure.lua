@@ -56,6 +56,11 @@ local Section = Tab:NewSection("🧱 Fake Blocks")
 Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20All.lua"))()
 end)
 
+local Tab = Window:NewTab("👨‍💻 Player")
+folder:AddSlider({text = '⚡ WalksSpeed', min = 16, max = 100, incrementalMode = true, callback = function(value) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end});
+
 local Tab = Window:NewTab("🎮 Main") 
 
 local Section = Tab:NewSection("↻ Rejoin")
