@@ -1,17 +1,17 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/GUI"))() 
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/GUI"))() 
 local Window = Library.CreateLib("NONAME HUB", "DarkTheme")
 
 local Tab = Window:NewTab("💳 Auto Farm") local Section = Tab:NewSection("🧧 Script Auto Farm")
-Section:NewButton("Click", " Auto Farm Script", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Auto%20Farm.lua"))() end)
+Section:NewButton("Click", " Auto Farm Script", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Auto%20Farm.lua"))() end)
 
 local Tab = Window:NewTab("🔨 Auto Builder") 
 local Section = Tab:NewSection("🧱 Script Auto Builder")
 
-Section:NewButton("Click", "🧱 Script Auto Builder", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Auto%20Builder.lua"))() end)
+Section:NewButton("Click", "🧱 Script Auto Builder", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Auto%20Builder.lua"))() end)
 
 local Section = Tab:NewSection("🎨 Script Auto Builder Image")
 
-Section:NewButton("Click", "🎨Script Auto Builder Image", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Auto%20Builder%20Image.lua"))() end)
+Section:NewButton("Click", "🎨Script Auto Builder Image", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Auto%20Builder%20Image.lua"))() end)
 
 local Tab = Window:NewTab("🎄 Quests") 
 local Section = Tab:NewSection("🍞 Bread Quest")
@@ -48,12 +48,12 @@ Section:NewButton("Click", "NONAME HUB", function() game.Players.LocalPlayer.Cha
 local Tab = Window:NewTab("👑 Fake") 
 local Section = Tab:NewSection("∞ Fake Gold")
 
-Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20Gold"))()
+Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Fake%20Gold"))()
 end)
 
 local Section = Tab:NewSection("🧱 Fake Blocks")
 
-Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Fake%20All.lua"))()
+Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Fake%20All.lua"))()
 end)
 
 local Tab = Window:NewTab("👨‍💻 Player")
@@ -98,7 +98,7 @@ Section:NewButton("Click", "เปิด Anit AFK", function() loadstring(game:H
 
 local Section = Tab:NewSection("☁ Remove Fog")
   
-Section:NewButton("Click", "", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Remove%20Fog.lua"))() end)
+Section:NewButton("Click", "", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Remove%20Fog.lua"))() end)
 
 
 local Tab = Window:NewTab("🎫 credit") local Section = Tab:NewSection("By: peatchXD")
