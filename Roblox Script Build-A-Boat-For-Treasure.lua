@@ -13,6 +13,16 @@ local Section = Tab:NewSection("Script Auto Builder Image")
 
 Section:NewButton("Click", "Script Auto Builder Image", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Auto%20Builder%20Image.lua"))() end)
 
+local Tab = Window:NewTab("🎄 Quests") 
+local Section = Tab:NewSection("Bread Quest")
+Section:NewButton("Click", "Script Auto Builder", function() workspace.QuestMakerEvent:FireServer(100) end)
+
+local Section = Tab:NewSection("Gift Quest")
+Section:NewButton("Click", "Script Auto Builder", function() workspace.QuestMakerEvent:FireServer(99) end)
+
+local Section = Tab:NewSection("Christmas Quest")
+Section:NewButton("Click", "Script Auto Builder", function() workspace.QuestMakerEvent:FireServer(101) end)
+
 local Tab = Window:NewTab("🌌 Teleport To Teams")
 local Section = Tab:NewSection("White")
 Section:NewButton("Click", "NONAME HUB", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50.0028458, -9.65999889, -567.075378, -0.999934494, 1.69590315e-08, -0.0114457831, 1.56394382e-08, 1, 1.15380317e-07, 0.0114457831, 1.15193757e-07, -0.999934494) end)
