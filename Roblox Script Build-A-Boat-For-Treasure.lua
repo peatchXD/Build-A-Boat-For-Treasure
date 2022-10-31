@@ -23,7 +23,7 @@ Section:NewButton("Click", "Loads in the gingerbread Fight (you need to be leade
 local Section = Tab:NewSection("👩‍👩‍👧‍👧 Christmas Quest")
 Section:NewButton("Click", "Loads in the xmas Fight (you need to be leader for this to work", function() workspace.QuestMakerEvent:FireServer(101) end)
 
-local Tab = Window:NewTab("🌌 Teleport To Teams")
+local Tab = Window:NewTab("🌌 Teleport")
 local Section = Tab:NewSection("⬜ White")
 Section:NewButton("Click", "NONAME HUB", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50.0028458, -9.65999889, -567.075378, -0.999934494, 1.69590315e-08, -0.0114457831, 1.56394382e-08, 1, 1.15380317e-07, 0.0114457831, 1.15193757e-07, -0.999934494) end)
 
