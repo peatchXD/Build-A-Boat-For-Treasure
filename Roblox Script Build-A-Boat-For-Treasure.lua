@@ -38,6 +38,10 @@ local Section = Tab:NewSection("Anit AFK")
   
 Section:NewButton("Click", "เปิด Anit AFK", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Roblox-Script-AFK/main/Script%20AFK.lua"))() end)
 
+local Section = Tab:NewSection("Remove Fog")
+  
+Section:NewButton("Click", "", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure-Fake-ALL/main/Remove%20Fog.lua"))() end)
+
 
 local Tab = Window:NewTab("💎 credit") local Section = Tab:NewSection("By: peatchXD")
 
