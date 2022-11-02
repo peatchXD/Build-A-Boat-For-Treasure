@@ -39,9 +39,10 @@ local Tab = Window:NewTab("🎄 Auto Loop Quest")
 local Section = Tab:NewSection("🍞 Loop Quest Bread Quest")
 Section:NewToggle("Click 150 Seconds", "can't stop If you stop will join the game again.", function() 
 while true do
-	workspace.QuestMakerEvent:FireServer(100)
+		workspace.QuestMakerEvent:FireServer(100)
 	wait(150) 
-end)
+end
+	end)
 
 local Section = Tab:NewSection("🎁 Loop Quest Gift Quest")
 Section:NewToggle("Click 150 Seconds", "can't stop If you stop will join the game again.", function() 
