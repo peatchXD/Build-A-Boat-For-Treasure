@@ -28,7 +28,6 @@ local Tab = Window:NewTab("🎄 Auto Loop Quest")
 local Section = Tab:NewSection("🍞 Loop Quest Bread Quest")
 Section:NewButton("Click 150 Seconds", "can't stop If you stop will join the game again.", function() workspace.QuestMakerEvent:FireServer(100)
 local timeRemaining = 150
-
 while timeRemaining > 0 do
 	print("Timing.  " .. timeRemaining)
 	wait(1)
@@ -40,17 +39,17 @@ print("Time Out !") end)
 local Section = Tab:NewSection("🎁 Loop Quest Gift Quest")
 Section:NewButton("Click 150 Seconds", "can't stop If you stop will join the game again.", function() workspace.QuestMakerEvent:FireServer(99) 
 local timeRemaining = 150
-
 while timeRemaining > 0 do
 	print("Timing.  " .. timeRemaining)
 	wait(1)
 	timeRemaining = timeRemaining - 1	
 end
 		
+print("Time Out !") end)
+		
 local Section = Tab:NewSection("👩‍👩‍ Loop Quest Christmas Quest")
-Section:NewButton("Click 150 Seconds", "can't stop If you stop will join the game again.", function() workspace.QuestMakerEvent:FireServer(101)
-local timeRemaining = 150
-
+Section:NewButton("Click 150 Seconds", "can't stop If you stop will join the game again.", function() workspace.QuestMakerEvent:FireServer(101) 
+local timeRemaining = 150 
 while timeRemaining > 0 do
 	print("Timing.  " .. timeRemaining)
 	wait(1)
