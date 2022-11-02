@@ -1,13 +1,15 @@
-local Server =  http_request({
+local Server =  syn.request({
     Url = "http://127.0.0.1/WHITELIST%20NONAME%20HUB/Server.php?Key=".. _G.Key .."&HWID="..HWID,
     Method = "GET"
 }).Body
  
 if Server == "WHITELIST !" then
-    print("")
+    print("Welcome To Script Noname Hub")
 elseif Server == "Invaid HWID !" then
     game.Players.LocalPlayer:kick("Invaid HWID")
-else Server == "Invaid Key" then
+elseif Server == "Invaid Key" then
+    game.Players.LocalPlayer:kick("Invaid Key")
+else
     game.Players.LocalPlayer:kick("Invaid Key")
 end
 
