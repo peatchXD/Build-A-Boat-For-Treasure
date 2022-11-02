@@ -59,9 +59,9 @@ end
 print("Time Out !") end)
 
 
-local Tab = Window:NewTab("🌌 Teleport")
+local Tab = Window:NewTab("🌌 Teleport Player !")
 
-local Section = Tab:NewSection("📃 Select Player!")
+local Section = Tab:NewSection("📃 Select Player !")
 Plr = {}
 for i,v in pairs(game:GetService("☄ Players"):GetChildren()) do
     table.insert(Plr,v.Name) 
@@ -83,7 +83,7 @@ Section:NewButton("💾 Refresh Dropdown","Refresh Dropdown", function()
   drop:Refresh(Plr)
 end)
 
-local Section = Tab:NewSection(" ")
+local Tab = Window:NewTab("🌌 Teleport")
 
 local Section = Tab:NewSection("⬜ White")
 Section:NewButton("Click", "NONAME HUB", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50.0028458, -9.65999889, -567.075378, -0.999934494, 1.69590315e-08, -0.0114457831, 1.56394382e-08, 1, 1.15380317e-07, 0.0114457831, 1.15193757e-07, -0.999934494) end)
