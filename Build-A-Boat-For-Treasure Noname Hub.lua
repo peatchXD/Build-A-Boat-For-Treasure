@@ -13,6 +13,17 @@ local Section = Tab:NewSection("🎨 Script Auto Builder Image")
 
 Section:NewButton("Click", "🎨Script Auto Builder Image", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Auto%20Builder%20Image.lua"))() end)
 
+local Tab = Window:NewTab("👑 Fake") 
+local Section = Tab:NewSection("∞ Fake Gold")
+
+Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Fake%20Gold"))()
+end)
+
+local Section = Tab:NewSection("🧱 Fake Blocks")
+
+Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Fake%20All.lua"))()
+end)
+
 local Tab = Window:NewTab("🎄 Quests") 
 local Section = Tab:NewSection("🍞 Bread Quest")
 Section:NewButton("Click", "Loads in the fabbie boss (you need to be leader for this to work", function() workspace.QuestMakerEvent:FireServer(100) end)
@@ -106,17 +117,6 @@ Section:NewButton("Click", "NONAME HUB", function() game.Players.LocalPlayer.Cha
 
 local Section = Tab:NewSection("🟪 Magenta")
 Section:NewButton("Click", "NONAME HUB", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(443.725342, -9.89999676, 647.826416, -0.00752122747, -6.9397494e-08, 0.999971688, -4.07260288e-08, 1, 6.90931401e-08, -0.999971688, -4.02052116e-08, -0.00752122747) end)
-
-local Tab = Window:NewTab("👑 Fake") 
-local Section = Tab:NewSection("∞ Fake Gold")
-
-Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Fake%20Gold"))()
-end)
-
-local Section = Tab:NewSection("🧱 Fake Blocks")
-
-Section:NewButton("Click", "NONAME HUB", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Fake%20All.lua"))()
-end)
 
 local Tab = Window:NewTab("👨‍💻 Player")
 
