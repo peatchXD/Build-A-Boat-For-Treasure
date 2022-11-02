@@ -4,12 +4,10 @@ local Server =  http_request({
 }).Body
  
 if Server == "WHITELIST !" then
-    print("SCRIPT")
+    print("")
 elseif Server == "Invaid HWID !" then
     game.Players.LocalPlayer:kick("Invaid HWID")
-elseif Server == "Invaid Key" then
-    game.Players.LocalPlayer:kick("Invaid Key")
-else
+else Server == "Invaid Key" then
     game.Players.LocalPlayer:kick("Invaid Key")
 end
 
