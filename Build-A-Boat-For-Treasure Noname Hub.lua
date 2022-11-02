@@ -61,8 +61,7 @@ print("Time Out !") end)
 
 local Tab = Window:NewTab("🌌 Teleport")
 
-local Tab = Window:NewTab("🌠 Player")
-local Section = Tab:NewSection("Select Player!")
+local Section = Tab:NewSection("📃 Select Player!")
 Plr = {}
 for i,v in pairs(game:GetService("☄ Players"):GetChildren()) do
     table.insert(Plr,v.Name) 
