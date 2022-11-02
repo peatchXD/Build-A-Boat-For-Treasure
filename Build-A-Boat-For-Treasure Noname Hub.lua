@@ -49,15 +49,16 @@ Section:NewToggle("Click 150 Seconds", "can't stop If you stop will join the gam
 while true do
 	workspace.QuestMakerEvent:FireServer(99)
 	wait(150) 
-end)
+end
+	end)
 		
 local Section = Tab:NewSection("👩‍👩‍ Loop Quest Christmas Quest")
 Section:NewToggle("Click 150 Seconds", "can't stop If you stop will join the game again.", function()
 while true do
 	workspace.QuestMakerEvent:FireServer(101)
 	wait(150) 
-end)
-
+end
+	end)
 
 local Tab = Window:NewTab("🌌 Teleport Player !")
 
