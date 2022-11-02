@@ -1,4 +1,4 @@
-local Server =  http_request({
+local Server = http_request({
     Url = "http://127.0.0.1/WHITELIST%20NONAME%20HUB/Server.php?Key=".. _G.Key .."&HWID="..HWID,
     Method = "GET"
 }).Body
