@@ -81,7 +81,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Player
 end
 end)
 
-Section:NewButton("💾 Refresh Dropdown","Refresh Dropdown", function()
+Section:NewButton("💾 Refresh","Refresh", function()
   drop:Refresh(Plr)
 end)
 
