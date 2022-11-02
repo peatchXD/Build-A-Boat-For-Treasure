@@ -4,7 +4,8 @@ local Server =  syn.request({
 }).Body
  
 if Server == "WHITELIST !" then
-    print("             Welcome To Script Noname Hub")
+    print("                             Welcome To Script Noname Hub")
+    print("")
     print("███╗   ██╗ ██████╗ ███╗   ██╗ █████╗ ███╗   ███╗███████╗    ██╗  ██╗██╗   ██╗██████╗ ")
     print("████╗  ██║██╔═══██╗████╗  ██║██╔══██╗████╗ ████║██╔════╝    ██║  ██║██║   ██║██╔══██╗")
     print("██╔██╗ ██║██║   ██║██╔██╗ ██║███████║██╔████╔██║█████╗      ███████║██║   ██║██████╔╝")
