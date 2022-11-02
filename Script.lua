@@ -1,8 +1,8 @@
-local Server = syn.request({
+local Server =  syn.request({
     Url = "http://127.0.0.1/WHITELIST%20NONAME%20HUB/Server.php?Key=".. _G.Key .."&HWID="..HWID,
     Method = "GET"
 }).Body
-
+ 
 if Server == "WHITELIST !" then
     print("SCRIPT")
 elseif Server == "Invaid HWID !" then
