@@ -140,4 +140,4 @@ Section:NewButton("Click", "", function() loadstring(game:HttpGet("https://raw.g
 
 local Tab = Window:NewTab("🎫 credit") local Section = Tab:NewSection("By: peatchXD")
 
-Section:NewKeybind("⚙ กดเพื่อเปลื่ยนปุ่ม", "KeybindInfo", Enum.KeyCode.F, function() Library:ToggleUI() end) 
+Section:NewKeybind("⚙ press to change button", "KeybindInfo", Enum.KeyCode.F, function() Library:ToggleUI() end) 
