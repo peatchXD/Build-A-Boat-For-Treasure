@@ -1,7 +1,7 @@
 -- // Custom Settings
 getgenv().TreasureAutoFarm = {
     Enabled = true, -- // Toggle the auto farm on and off
-    Teleport = 3, -- // How fast between each teleport between the stages and stuff
+    Teleport = 2, -- // How fast between each teleport between the stages and stuff
     TimeBetweenRuns = 5 -- // How long to wait until it goes to the next run
 }
 
@@ -56,4 +56,15 @@ local autoFarm = function(currentRun)
 
     repeat wait() until Respawned
     wait(getgenv().TreasureAutoFarm.TimeBetweenRuns)
+    print("Auto Farm: Run " .. currentRun .. " finished")
+end
+
+-- // Whilst the autofarm is enable, constantly do it
+local autoFarmRun = 1
+while wait() do
+    if (getgenv().TreasureAutoFarm.Enabled) then
+        print("Initialising Auto Farm: Run " .. autoFarmRun)
+        autoFarm(autoFarmRun)
+        autoFarmRun = autoFarmRun + 1
+    end
 end
