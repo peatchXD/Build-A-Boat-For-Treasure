@@ -36,7 +36,7 @@ Section:NewButton("Click", "Loads in the gingerbread Fight (you need to be leade
 local Section = Tab:NewSection("👩‍👧‍👧 Christmas Quest")
 Section:NewButton("Click", "Loads in the xmas Fight (you need to be leader for this to work", function() workspace.QuestMakerEvent:FireServer(101) end)
 
-local Tab = Window:NewTab("🎄 Auto Loop Quest") 
+local Section = Window:NewTab("🎄 Auto Loop Quest") 
 
 local Section = Tab:NewSection("🍞 Loop Quest Bread Quest")
 Section:NewToggle("Click 150 Seconds", "can't stop If you stop will join the game again.", function() 
@@ -62,8 +62,7 @@ while true do
 end
 	end)
 
-local Tab = Window:NewTab("🎄 Auto Farm Quests") 
-local Section = Tab:NewSection("HALLOWEEN BOSS")
+local Section = Tab:NewSection("Event BOSS")
 Section:NewButton("HALLOWEEN BOSS", " TP ", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/AUTO%20FARM%20HALLOWEEN%20BOSS.lua"))() end)
 
 Section:NewButton("EGG BOSS", " TP ", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/TP%20EGG%20%20BOSS.lua"))() end)
