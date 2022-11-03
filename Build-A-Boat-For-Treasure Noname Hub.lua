@@ -62,6 +62,10 @@ while true do
 end
 	end)
 
+local Tab = Window:NewTab("🎄 Auto Farm Quests") 
+local Section = Tab:NewSection("HALLOWEEN BOSS")
+Section:NewButton("HALLOWEEN BOSS", " TP ", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/AUTO%20FARM%20HALLOWEEN%20BOSS.lua"))() end)
+
 local Tab = Window:NewTab("🌌 Teleport Player !")
 
 local Section = Tab:NewSection("📃 Select Player !")
