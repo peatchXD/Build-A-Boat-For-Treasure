@@ -36,7 +36,7 @@ Section:NewButton("Click", "Loads in the gingerbread Fight (you need to be leade
 local Section = Tab:NewSection("👩‍👧‍👧 Christmas Quest")
 Section:NewButton("Click", "Loads in the xmas Fight (you need to be leader for this to work", function() workspace.QuestMakerEvent:FireServer(101) end)
 
-local Section = Window:NewTab("🎄 Auto Loop Quest") 
+local Section = Tab:NewSection("🎄 Auto Loop Quest") 
 
 local Section = Tab:NewSection("🍞 Loop Quest Bread Quest")
 Section:NewToggle("Click 150 Seconds", "can't stop If you stop will join the game again.", function() 
