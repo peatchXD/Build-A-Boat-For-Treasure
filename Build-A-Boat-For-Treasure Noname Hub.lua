@@ -204,7 +204,7 @@ local Section = Tab:NewSection("↻ Rejoin")
 Section:NewButton("Click", "ออกเข้าใหม่", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/blox-fruit-fake-level-/main/Rejoin%20Game.lua"))() end)
 
 local Section = Tab:NewSection("👁‍ X-Ray")
-Section:NewButton("Click", "Press X To X-Ray", function() 
+Section:NewToggle("Click", "Press X To X-Ray", function() 
 		local t=false
 
 local function scan(z,t)
