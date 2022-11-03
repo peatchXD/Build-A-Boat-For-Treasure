@@ -4,7 +4,7 @@ local Window = Library.CreateLib("NONAME HUB", "DarkTheme")
 local Tab = Window:NewTab("💳 Auto Farm") local Section = Tab:NewSection("🧧 Script Auto Farm")
 Section:NewButton("Click", " Auto Farm Script", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Auto%20Farm.lua"))() end)
 local Section = Tab:NewSection("🚀 Teleport Farm")
-Section:NewToggle("Auto Teleport Farm", "Respawned = Stop Script Auto Farm", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Auto%20Teleport%20Farm.lua"))() end)
+Section:NewButton("Auto Teleport Farm", "Respawned = Stop Script Auto Farm", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Auto%20Teleport%20Farm.lua"))() end)
 
 local Tab = Window:NewTab("🔨 Auto Builder") 
 local Section = Tab:NewSection("🧱 Script Auto Builder")
