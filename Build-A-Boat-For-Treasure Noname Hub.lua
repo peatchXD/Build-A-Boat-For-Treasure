@@ -4,69 +4,7 @@ local Window = Library.CreateLib("NONAME HUB", "DarkTheme")
 local Tab = Window:NewTab("💳 Auto Farm") local Section = Tab:NewSection("🧧 Script Auto Farm")
 Section:NewButton("Click", " Auto Farm Script", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Auto%20Farm.lua"))() end)
 local Section = Tab:NewSection("🚀 Teleport Farm")
-Section:NewButton("Auto Teleport Farm", "Respawned = Stop Script Auto Farm", function() 
--- // Custom Settings
-getgenv().TreasureAutoFarm = {
-    Enabled = true, -- // Toggle the auto farm on and off
-    Teleport = 2, -- // How fast between each teleport between the stages and stuff
-    TimeBetweenRuns = 5 -- // How long to wait until it goes to the next run
-}
-
--- // Services
-local Players = game:GetService("Players")
-local Workspace = game:GetService("Workspace")
-local Lighting = game:GetService("Lighting")
-
--- // Vars
-local LocalPlayer = Players.LocalPlayer
-
--- // Goes through all of the stages
-local autoFarm = function(currentRun)
-    -- // Variables
-    local Character = LocalPlayer.Character
-    local NormalStages = Workspace.BoatStages.NormalStages
-
-    -- // Go to each stage thing
-    for i = 1, 10 do
-        local Stage = NormalStages["CaveStage" .. i]
-        local DarknessPart = Stage:FindFirstChild("DarknessPart")
-
-        if (DarknessPart) then
-            -- // Teleport to next stage
-            print("Teleporting to next stage: Stage " .. i)
-            Character.HumanoidRootPart.CFrame = DarknessPart.CFrame
-
-            -- // Create a temp part under you
-            local Part = Instance.new("Part", LocalPlayer.Character)
-            Part.Anchored = true
-            Part.Position = LocalPlayer.Character.HumanoidRootPart.Position - Vector3.new(0, 6, 0)
-
-            -- // Wait and remove temp part
-            wait(getgenv().TreasureAutoFarm.Teleport)
-            Part:Destroy()
-        end
-    end
-
-    -- // Go to end
-    print("Teleporting to the end")
-    repeat wait()
-        Character.HumanoidRootPart.CFrame = NormalStages.TheEnd.GoldenChest.Trigger.CFrame
-    until Lighting.ClockTime ~= 14
-
-    -- // Wait until you have respawned
-    local Respawned = false
-    local Connection
-    Connection = LocalPlayer.CharacterAdded:Connect(function()
-        Respawned = true
-        Connection:Disconnect()
-    end)
-
-    repeat wait() until Respawned
-    wait(getgenv().TreasureAutoFarm.TimeBetweenRuns)
-end
-
-end)
-
+Section:NewToggle("Auto Teleport Farm", "Respawned = Stop Script Auto Farm", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Auto%20Teleport%20Farm.lua"))() end)
 
 local Tab = Window:NewTab("🔨 Auto Builder") 
 local Section = Tab:NewSection("🧱 Script Auto Builder")
@@ -205,7 +143,7 @@ local Section = Tab:NewSection("↻ Rejoin")
 Section:NewButton("Click", "ออกเข้าใหม่", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/blox-fruit-fake-level-/main/Rejoin%20Game.lua"))() end)
 
 local Section = Tab:NewSection("👁‍ X-Ray")
-Section:NewToggle("Click", "Press X To X-Ray", function() 
+Section:NewButton("Click", "Press X To X-Ray", function() 
 		local t=false
 
 local function scan(z,t)
