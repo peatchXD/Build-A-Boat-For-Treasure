@@ -62,10 +62,10 @@ while true do
 end
 	end)
 
-local Section = Tab:NewSection("Event BOSS")
-Section:NewButton("HALLOWEEN BOSS", " TP ", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/AUTO%20FARM%20HALLOWEEN%20BOSS.lua"))() end)
+local Section = Tab:NewSection("💥 Event BOSS")
+Section:NewButton("🎃 HALLOWEEN BOSS", " TP ", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/AUTO%20FARM%20HALLOWEEN%20BOSS.lua"))() end)
 
-Section:NewButton("EGG BOSS", " TP ", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/TP%20EGG%20%20BOSS.lua"))() end)
+Section:NewButton("🥚 EGG BOSS", " TP ", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/TP%20EGG%20%20BOSS.lua"))() end)
 				
 local Tab = Window:NewTab("🌌 Teleport Player !")
 
