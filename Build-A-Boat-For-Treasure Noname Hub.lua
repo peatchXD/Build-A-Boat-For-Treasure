@@ -66,6 +66,8 @@ local Tab = Window:NewTab("🎄 Auto Farm Quests")
 local Section = Tab:NewSection("HALLOWEEN BOSS")
 Section:NewButton("HALLOWEEN BOSS", " TP ", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/AUTO%20FARM%20HALLOWEEN%20BOSS.lua"))() end)
 
+Section:NewButton("EGG BOSS", " TP ", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/TP%20EGG%20%20BOSS.lua"))() end)
+				
 local Tab = Window:NewTab("🌌 Teleport Player !")
 
 local Section = Tab:NewSection("📃 Select Player !")
@@ -77,10 +79,10 @@ end
 local drop = Section:NewDropdown("📃 Select Player!", "Click To Select", Plr, function(t)
    PlayerTP = t
 end)
-Section:NewButton("🎯 Click To TP", "", function()
+Section:NewButton("🎯 Teleport", "", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
 end)
-Section:NewToggle("🎯 Auto Tp", "", function(t)
+Section:NewToggle("🎯 Auto Teleport", "", function(t)
 _G.TPPlayer = t
 while _G.TPPlayer do wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
