@@ -62,6 +62,7 @@ local autoFarm = function(currentRun)
 
     repeat wait() until Respawned
     wait(getgenv().TreasureAutoFarm.TimeBetweenRuns)
+    print("Auto Farm: Run " .. currentRun .. " finished")
 end
 end)
 
