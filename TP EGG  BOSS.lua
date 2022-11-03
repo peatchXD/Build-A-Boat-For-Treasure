@@ -3,10 +3,9 @@ local Char = game.Players.LocalPlayer.Character;
 local Teleporting = game:GetService("TeleportService");
 local CFrameEnd1 = CFrame.new(154.520203, 19.8999958, -585.97937, 0.0444632471, -8.15364203e-08, -0.99901104, 3.72954645e-09, 1, -8.1451148e-08, 0.99901104, -1.04275512e-10, 0.0444632471);
 local Time1 = 5;
-local tween1 = game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time1), {CFrame = CFrameEnd1});
-local CFrameEnd2 = CFrame.new(220.306152, 109.399979, -671.746765, -0.855367541, 6.46607461e-08, 0.518021643, 5.07108346e-08, 1, -4.10877519e-08, -0.518021643, -8.8758183e-09, -0.855367541);
+local Teleporting = game:GetService("TeleportService");
+local CFrameEnd2 = CFrame.new(140.716858, 109.399971, -685.916382, -0.832346022, 2.70630345e-08, -0.55425632, 4.32807967e-09, 1, 4.2328022e-08, 0.55425632, 3.28326948e-08, -0.832346022);
 local Time2 = 5;
-local tween2 =  game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time2), {CFrame = CFrameEnd2});
 wait(5)
 if game.PlaceId ~= 1930863474 then
 Teleporting:Teleport(1930863474, plr)
