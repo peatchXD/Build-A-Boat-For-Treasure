@@ -3,7 +3,7 @@ local Window = Library.CreateLib("NONAME HUB", "DarkTheme")
 
 local Tab = Window:NewTab("💳 Auto Farm") local Section = Tab:NewSection("🧧 Script Auto Farm")
 Section:NewButton("Click", " Auto Farm Script", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Auto%20Farm.lua"))() end)
-Section:NewButton("TEST FARM", " Auto Farm Script", function() local players = game:GetService("Players")
+Section:NewToggle("TEST FARM", " Auto Farm Script", function() local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
 game.Workspace.Gravity = 0.5 -- reduces glitchiness
