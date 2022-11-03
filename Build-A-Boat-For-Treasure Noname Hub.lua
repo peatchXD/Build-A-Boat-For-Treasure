@@ -4,10 +4,11 @@ local Window = Library.CreateLib("NONAME HUB", "DarkTheme")
 local Tab = Window:NewTab("💳 Auto Farm") local Section = Tab:NewSection("🧧 Script Auto Farm")
 Section:NewButton("Click", " Auto Farm Script", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Auto%20Farm.lua"))() end)
 local Section = Tab:NewSection("🚀 Teleport Farm")
-Section:NewButton("Auto Teleport Farm", "Respawned = Stop Script Auto Farm", -- // Custom Settings
+Section:NewButton("Auto Teleport Farm", "Respawned = Stop Script Auto Farm", function() 
+-- // Custom Settings
 getgenv().TreasureAutoFarm = {
     Enabled = true, -- // Toggle the auto farm on and off
-    Teleport = 3, -- // How fast between each teleport between the stages and stuff
+    Teleport = 2, -- // How fast between each teleport between the stages and stuff
     TimeBetweenRuns = 5 -- // How long to wait until it goes to the next run
 }
 
@@ -62,8 +63,8 @@ local autoFarm = function(currentRun)
 
     repeat wait() until Respawned
     wait(getgenv().TreasureAutoFarm.TimeBetweenRuns)
-    print("Auto Farm: Run " .. currentRun .. " finished")
 end
+
 end)
 
 
