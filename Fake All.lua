@@ -22,7 +22,6 @@ game.Players.LocalPlayer.Data.TitaniumRod.Value = 9999999
 game.Players.LocalPlayer.Data.ConcreteBlock.Value = 9999999
 game.Players.LocalPlayer.Data.MarbleBlock.Value = 9999999
 game.Players.LocalPlayer.Data.TitaniumBlock.Value = 9999999
-game.Players.LocalPlayer.Data.Wheel.Value = 9999999
 game.Players.LocalPlayer.Data.Chair.Value = 9999999
 game.Players.LocalPlayer.Data.Torch.Value = 9999999
 game.Players.LocalPlayer.Data.YellowChest.Value = 9999999
