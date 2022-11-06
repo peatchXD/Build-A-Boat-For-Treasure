@@ -66,10 +66,11 @@ local Section = Tab:NewSection("💥 Event BOSS")
 Section:NewButton("🎃 HALLOWEEN BOSS", " TP ", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/AUTO%20FARM%20HALLOWEEN%20BOSS.lua"))() end)
 
 Section:NewButton("🥚 EGG BOSS", " TP ", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/TP%20EGG%20%20BOSS.lua"))() end)
-				
-local Tab = Window:NewTab("🌌 Teleport Player !")
 
-local Section = Tab:NewSection("📃 Select Player !")
+
+local Tab = Window:NewTab("🌌 Teleport")
+
+local Section = Tab:NewSection("📃 Teleport Player !")
 Plr = {}
 for i,v in pairs(game:GetService("Players"):GetChildren()) do
     table.insert(Plr,v.Name) 
@@ -92,7 +93,6 @@ Section:NewButton("💾 Refresh","Refresh", function()
   drop:Refresh(Plr)
 end)
 
-local Tab = Window:NewTab("🌌 Teleport")
 
 local Section = Tab:NewSection("⬜ White")
 Section:NewButton("Click", "NONAME HUB", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50.0028458, -9.65999889, -567.075378, -0.999934494, 1.69590315e-08, -0.0114457831, 1.56394382e-08, 1, 1.15380317e-07, 0.0114457831, 1.15193757e-07, -0.999934494) end)
@@ -162,6 +162,10 @@ local Section = Tab:NewSection("☁ Remove Fog")
   
 Section:NewButton("Click", "", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Remove%20Fog.lua"))() end)
 
+local Tab = Window:NewTab("🗂Script Hub")
+Section:NewButton("📕 Astra Hub", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Astra%20Hub.lua"))() end)
+Section:NewButton("📕 Emotes", "press to </ม to Open", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Emotes.lua"))() end)
+Section:NewButton("📕 Max2007killer", "Key Donatepls152621", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Max2007killer.lua"))() end)
 
 local Tab = Window:NewTab("🎫 credit") local Section = Tab:NewSection("By: peatchXD")
 
