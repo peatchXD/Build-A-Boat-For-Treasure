@@ -162,11 +162,17 @@ local Section = Tab:NewSection("☁ Remove Fog")
   
 Section:NewButton("Click", "", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Remove%20Fog.lua"))() end)
 
-local Tab = Window:NewTab("🗂Script Hub")
-Section:NewButton("📕 Astra Hub", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Astra%20Hub.lua"))() end)
-Section:NewButton("📕 Emotes", "press to </ม to Open", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Emotes.lua"))() end)
-Section:NewButton("📕 Max2007killer", "Key Donatepls152621", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Max2007killer.lua"))() end)
+local Tab = Window:NewTab("🗂 Script Hub")
 
-local Tab = Window:NewTab("🎫 credit") local Section = Tab:NewSection("By: peatchXD")
+local Section = Tab:NewSection("📕 Astra Hub")
+Section:NewButton("Click", "", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Astra%20Hub.lua"))() end)
+
+local Section = Tab:NewSection("📕 Emotes")
+Section:NewButton("Click", "press to </ม to Open", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Emotes.lua"))() end)
+
+local Section = Tab:NewSection("📕 Max2007killer")
+Section:NewButton("Click", "Key Donatepls152621", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Max2007killer.lua"))() end)
+
+local Tab = Window:NewTab("🎫 credit") local Section = Tab:NewSection("By: peatchXD#6075")
 
 Section:NewKeybind("⚙ press to change button", "KeybindInfo", Enum.KeyCode.F, function() Library:ToggleUI() end)  
