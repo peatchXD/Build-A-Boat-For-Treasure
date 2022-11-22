@@ -117,6 +117,9 @@ Section:NewButton("Click", "NONAME HUB", function() game.Players.LocalPlayer.Cha
 
 local Tab = Window:NewTab("👨‍💻 Player")
 
+local Section = Tab:NewSection("👁 Spectate Player")
+Section:NewButton("👁 Spectate", " ", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/peatchXD/Build-A-Boat-For-Treasure/main/Spectate%20Player"))() end)
+
 local Section = Tab:NewSection("🎛 All Deffault")
 
 Section:NewButton("Deffault", "WalksSpeed & JumpPower Deffault", function() 
